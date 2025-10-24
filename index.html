@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="mainicon.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <title>Happy Woman's Day</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body class="not-loaded">
+<div class="bubbles" aria-hidden="true">
+        <span class="bubble small l-5"></span>
+        <span class="bubble medium l-15"></span>
+        <span class="bubble large l-25"></span>
+        <span class="bubble medium l-35"></span>
+        <span class="bubble small l-45"></span>
+        <span class="bubble large l-55"></span>
+        <span class="bubble small l-65"></span>
+        <span class="bubble medium l-75"></span>
+        <span class="bubble large l-85"></span>
+        <span class="bubble small l-92"></span>
+</div>
+<h1 class="valentine">Happy Birthday</h1>
+<div class="envelope-wrapper">
+    <div id="envelope" class="close">
+        <div class="front flap"></div>
+        <div class="front pocket"></div>
+        <div class="letter"></div>
+        <div class="hearts">
+            <div class="heart a1"></div>
+            <div class="heart a2"></div>
+            <div class="heart a3"></div>
+        </div>
+    </div>
+</div>
+<div id="letter-modal" class="letter-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-backdrop" aria-hidden="true"></div>
+    <div class="modal-content">
+        <button class="modal-close" id="close-modal" aria-label="Đóng thư">&times;</button>
+        <h2 id="modal-title">Birthday🎂</h2>
+        <div id="typewriter-text" class="typewriter-container"></div>
+    </div>
+</div>
+<div class="reset">
+    <button id="open" aria-label="Mở thư chúc mừng">Mở thư</button>
+    <a href="flower.html"><button aria-label="Nhận quà">Bấm để nhận quà</button></a>
+</div>
+<audio id="background-music" autoplay loop>
+    <source src="background-music.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+<script src="main.js"></script>
+</body>
+</html>
